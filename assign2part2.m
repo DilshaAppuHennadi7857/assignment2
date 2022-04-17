@@ -115,9 +115,6 @@ for i = 1:L
     end
 end
 
-% Mapping needs to be inverted to set the sides of the matrix to match the
-% appropriate BCs
-
 Ex = [];
 Ey = [];
 
@@ -172,18 +169,30 @@ Current = mean(Jxy.*(regL*regW*10^(13)), 'all');
 figure(3)
 subplot(2,2,1); surf(cMap)
 title('Conduction Map')
+xlabel('Region Length')
+ylabel('Region Width')
+zlabel('Conduction (\Omega^{-1})')
 view(135,45) % adjust camera angle for better view
 
 subplot(2,2,2); surf(Vmap)
 title('Electrostatic Charge')
+xlabel('Region Length')
+ylabel('Region Width')
+zlabel('Voltage (V)')
 view(135,45) % adjust camera angle for better view
 
 subplot(2,2,3); surf(Exy)
 title('Electric Field')
+xlabel('Region Length')
+ylabel('Region Width')
+zlabel('Voltage (V/m)')
 view(135,45) % adjust camera angle for better view
 
 subplot(2,2,4); surf(Jxy)
 title('Current Density')
+xlabel('Region Length')
+ylabel('Region Width')
+zlabel('Current Density (A/m)')
 view(135,45) % adjust camera angle for better view
 
 

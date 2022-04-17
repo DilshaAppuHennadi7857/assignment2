@@ -2,7 +2,7 @@
 %
 % Dilsha Appu-Hennadi, 101107857
 % Feb. 18, 2022
-% Latest rev. Feb. 23, 2022
+% Latest rev. Apr. 17, 2022
 
 clear all
 clearvars
@@ -46,7 +46,7 @@ ny = W;
 % 
 %
 
-assign2part1a;
+% assign2part1a;
 
 %%
 %
@@ -61,7 +61,7 @@ assign2part1a;
 % $$ V = V_0 $$ at $$ x = 0,L $$ and $$ V = 0 $$ at $$ y = 0,W $$
 %
 
-assign2part1b;
+% assign2part1b;
 
 %%
 %

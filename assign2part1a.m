@@ -4,7 +4,7 @@ dx2 = 1;
 
 G = sparse(nx*ny);
 F = zeros(nx*ny,1);
-V_0 = 1; %V
+V_0 = 0.1; %V
 
 for i = 1:nx
     for j = 1:ny
@@ -91,4 +91,6 @@ VmapInv = Vmap';
 figure(1)
 surf(VmapInv) % plot surface
 title('Electrostatic charge of Region')
+xlabel('Region Length')
+ylabel('Region Width')
 view(135,45) % adjust camera angle for better view

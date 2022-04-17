@@ -90,8 +90,12 @@ for n = 1:2:200
     figure(2)
     subplot(2,1,1); surf(VmapInv) % plot surface
     title('Finite Difference Method')
+    xlabel('Region Length')
+    ylabel('Region Width')
     subplot(2,1,2); surf(V_ana')
     title('Numerical Calculation')
+    xlabel('Region Length')
+    ylabel('Region Width')
 end
     
 
